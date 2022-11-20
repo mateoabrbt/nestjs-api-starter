@@ -7,8 +7,18 @@ services:
     environment:
       POSTGRES_USER: dev
       POSTGRES_PASSWORD: dev1234
-      POSTGRES_DB: devnest
+      POSTGRES_DB: devdb
     networks:
-      - nestadmin
+      - nestdev
+  test-db:
+    image: postgres:13
+    ports:
+      - 5435:5432
+    environment:
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev1234
+      POSTGRES_DB: devdb
+    networks:
+      - nestdev
 networks:
-  nestadmin:
+  nestdev:
