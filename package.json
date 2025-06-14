@@ -1,7 +1,7 @@
 {
   "name": "api-nest",
   "version": "0.0.1",
-  "description": "",
+  "description": "NestJS API starter with JWT authentication, Prisma ORM (PostgreSQL), and user management. Includes Docker, linting, and testing.",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
