@@ -17,10 +17,10 @@ model User {
   updated_at DateTime @updatedAt
 
   email String @unique
-  hash String
-  
+  hash  String
+
   first_name String?
-  last_name String?
+  last_name  String?
 
   @@map("users")
 }
